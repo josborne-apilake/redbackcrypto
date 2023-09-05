@@ -7,5 +7,5 @@ awake=`date -d "+$((sleep/3600)) hours"`
 
 if [[ ! " ${holidays[*]} " =~ " ${today} " ]]; then
    logger "Today is TOU day. Stopping minner and rebooting $awake"
-   miner stop && sreboot wakealarm $sleep miner stop && sreboot wakealarm $sleep
+   miner stop && sreboot wakealarm $sleep
 fi
