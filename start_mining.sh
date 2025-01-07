@@ -13,6 +13,7 @@ CHIA_PATH='/home/harvester01/chia-blockchain'
 CHIA_CMD='activate'
 CHIA_HARVESTER='chia start harvester -r'
 CHIA_HARVESTER_STOP='chia stop -d all && deactivate'
+TREX_CMD='t-rex -c config.txt'
 S3_MOUNT='s3fs awschiaplot /mnt/s3-bucket -o passwd_file=/home/harvester01/.passwd-s3fs'
 
 # Function to check if the tmux session is already. If it is ask user if they want to kill the existing session
